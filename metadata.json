@@ -1,0 +1,6 @@
+{
+  "name": "GYM STATION - Luxury Fitness & Wellness",
+  "description": "More Than A Gym. Build Your Best Self. A world-class luxury fitness, coaching, and wellness destination.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

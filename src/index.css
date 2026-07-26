@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-lime: #A3FF12;
+    --color-lime-glow: rgba(163, 255, 18, 0.25);
+    --color-bg: #050505;
+    --color-surface: #111111;
+    --color-surface-hover: #181818;
+    --color-accent: #1E1E1E;
+    --color-border: #262626;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #050505;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #050505;
+    color: #f3f4f6;
+    overflow-x: hidden;
+    selection-background-color: #A3FF12;
+    selection-color: #000000;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A3FF12;
+}
+
+/* Custom Utility Classes */
+.text-lime {
+  color: #A3FF12;
+}
+
+.bg-lime {
+  background-color: #A3FF12;
+}
+
+.border-lime {
+  border-color: #A3FF12;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+  color: transparent;
+}
+
+.text-outline-thick {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.glow-lime {
+  box-shadow: 0 0 25px rgba(163, 255, 18, 0.35);
+}
+
+.glow-lime-sm {
+  box-shadow: 0 0 12px rgba(163, 255, 18, 0.2);
+}
+
+.glass-panel {
+  background: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-text-lime {
+  background: linear-gradient(135deg, #FFFFFF 0%, #A3FF12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clip-slanted {
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.05); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
