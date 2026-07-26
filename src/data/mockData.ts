@@ -42,7 +42,7 @@ export const BRAND_INFO = {
     { year: "2020", title: "The Blueprint", desc: "Conceived by world-class athletic coaches and architects to redefine luxury training." },
     { year: "2022", title: "Flagship Launch", desc: "Opened our 25,000 sq ft sanctuary with Technogym Artis & Eleiko platforms." },
     { year: "2024", title: "Recovery Suite Addition", desc: "Integrated infrared saunas, eucalyptus steam rooms, and cryotherapy bays." },
-    { year: "2026", title: "AI Human Performance Lab", desc: "Pioneered 3D body composition scanning and real-time biometric tracking." }
+    { year: "2026", title: "Performance Lab", desc: "Pioneered 3D body composition scanning and real-time biometric tracking." }
   ]
 };
 
